@@ -15,25 +15,16 @@ const Popup = ({ children }) => {
   }
 
   return (
-    <Modal
-      open={stateModal}
-      aria-labelledby='modal-title'
-      aria-describedby='modal-description'
-      container={rootModal}
-    >
+    <Modal open={stateModal} aria-labelledby="modal-title" aria-describedby="modal-description" container={rootModal}>
       <Box sx={styles.container}>
-        <Typography id='modal-title' variant='h6' component='h2'>
+        <Typography id="modal-title" variant="h6" component="h2">
           Place an order
         </Typography>
-        <Box id='modal-description' sx={styles.boxChildren}>
+        <Box id="modal-description" sx={styles.boxChildren}>
           {children}
         </Box>
         <Box sx={styles.boxBtn}>
-          <Button
-            onClick={handleCloseModal}
-            variant='contained'
-            color='primary'
-          >
+          <Button onClick={handleCloseModal} variant="contained" color="primary">
             Close
           </Button>
         </Box>

@@ -12,12 +12,7 @@ const DeleteProductBtn = ({ id }) => {
   }
 
   return (
-    <Button
-      variant='contained'
-      color='secondary'
-      sx={styles.btn}
-      onClick={handleDelete}
-    >
+    <Button variant="contained" color="secondary" sx={styles.btn} onClick={handleDelete}>
       Remove
     </Button>
   )

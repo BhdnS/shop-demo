@@ -17,21 +17,19 @@ const ReadyPage = () => {
 
   return (
     <SingleProductContainer>
-      <Typography variant='h5' gutterBottom>
+      <Typography variant="h5" gutterBottom>
         Order Successfully Placed!
       </Typography>
-      <Typography variant='body1' gutterBottom>
+      <Typography variant="body1" gutterBottom>
         Your order has been successfully placed! Thank you for your purchase.
       </Typography>
-      <Typography variant='body1' gutterBottom>
-        We will start processing your order shortly. Expect notifications about
-        the status of your order.
+      <Typography variant="body1" gutterBottom>
+        We will start processing your order shortly. Expect notifications about the status of your order.
       </Typography>
-      <Typography variant='body1' gutterBottom>
-        If you have any questions or need further assistance, feel free to
-        contact our support team.
+      <Typography variant="body1" gutterBottom>
+        If you have any questions or need further assistance, feel free to contact our support team.
       </Typography>
-      <Button component={Link} to={'/'} variant='contained' color='primary'>
+      <Button component={Link} to={'/'} variant="contained" color="primary">
         Back to Home
       </Button>
     </SingleProductContainer>

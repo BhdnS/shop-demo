@@ -4,7 +4,7 @@ import styles from './SingleProductContainer.styles.js'
 
 const SingleProductContainer = ({ children }) => {
   return (
-    <Container component='main' maxWidth='md' sx={styles.container}>
+    <Container component="main" maxWidth="md" sx={styles.container}>
       <Box sx={styles.box}>{children}</Box>
     </Container>
   )

@@ -1,5 +1,5 @@
 import CategoriesData from '../../components/CategoriesData'
-import DataAsync from '../../componentsAsync/index.js'
+import DataAsync from '../../componentsAsync'
 
 const CategoriesPage = () => {
   return (

@@ -6,9 +6,7 @@ const getData = async (url) => {
     return res.data
   } catch (error) {
     if (error.response) {
-      throw new Error(
-        `Request failed with status ${error.response.status}: ${error.response.statusText}`
-      )
+      throw new Error(`Request failed with status ${error.response.status}: ${error.response.statusText}`)
     }
 
     throw new Error('Request failed: Network Error')

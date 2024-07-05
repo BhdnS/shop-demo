@@ -18,7 +18,7 @@ const useStore = create(
           }
         },
         false,
-        action.type
+        action.type,
       ),
     modalDispatch: (action) =>
       set(
@@ -26,9 +26,9 @@ const useStore = create(
           modal: popupReducer(state.modal, action),
         }),
         false,
-        action.type
+        action.type,
       ),
-  }))
+  })),
 )
 
 export const useStateBasket = () => useStore((state) => state.basket)

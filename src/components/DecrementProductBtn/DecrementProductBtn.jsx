@@ -12,12 +12,7 @@ const DecrementProductBtn = ({ id }) => {
   }
 
   return (
-    <Button
-      variant='outlined'
-      size='small'
-      sx={styles.btn}
-      onClick={handleDecrement}
-    >
+    <Button variant="outlined" size="small" sx={styles.btn} onClick={handleDecrement}>
       -
     </Button>
   )

@@ -8,10 +8,7 @@ const CategoriesData = () => {
 
   return (
     <MainContainer>
-      {categories.length > 0 &&
-        categories.map((category) => (
-          <Categories category={category} key={category.id} />
-        ))}
+      {categories.length > 0 && categories.map((category) => <Categories category={category} key={category.id} />)}
       {categories.length === 0 && <EmptyData />}
     </MainContainer>
   )

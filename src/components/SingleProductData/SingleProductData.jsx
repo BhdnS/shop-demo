@@ -11,15 +11,15 @@ const SingleProductData = () => {
 
   return (
     <SingleProductContainer>
-      <Typography variant='h4' component='h1' gutterBottom>
+      <Typography variant="h4" component="h1" gutterBottom>
         {title}
       </Typography>
       <SingleProductSwiper images={images} />
       <Box sx={styles.box}>
-        <Typography variant='h5' component='h2' gutterBottom>
+        <Typography variant="h5" component="h2" gutterBottom>
           ${price}
         </Typography>
-        <Typography variant='body1' component='p'>
+        <Typography variant="body1" component="p">
           {description}
         </Typography>
         <AddProductBtn id={id} singleProduct={product} />

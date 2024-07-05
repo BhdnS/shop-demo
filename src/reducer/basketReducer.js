@@ -22,16 +22,10 @@ const basketReducer = (state = [], action) => {
       return state.filter((v) => v.id !== action.payload)
 
     case INCREMENT_COUNT:
-      return state.map((v) =>
-        v.id === action.payload ? { ...v, count: v.count + 1 } : v
-      )
+      return state.map((v) => (v.id === action.payload ? { ...v, count: v.count + 1 } : v))
 
     case DECREMENT_COUNT:
-      return state
-        .map((v) =>
-          v.id === action.payload ? { ...v, count: v.count - 1 } : v
-        )
-        .filter((v) => v.count > 0)
+      return state.map((v) => (v.id === action.payload ? { ...v, count: v.count - 1 } : v)).filter((v) => v.count > 0)
 
     case CLEAR_BASKET:
       return []

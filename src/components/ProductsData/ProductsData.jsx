@@ -8,10 +8,7 @@ const ProductsData = () => {
 
   return (
     <MainContainer>
-      {products.length > 0 &&
-        products.map((product) => (
-          <Products key={product.id} products={products} product={product} />
-        ))}
+      {products.length > 0 && products.map((product) => <Products key={product.id} products={products} product={product} />)}
       {products.length === 0 && <EmptyData />}
     </MainContainer>
   )

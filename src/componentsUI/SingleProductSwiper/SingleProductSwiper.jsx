@@ -7,20 +7,10 @@ import styles from './SingleProductSwiper.styles.js'
 
 const SingleProductSwiper = ({ images }) => {
   return (
-    <Swiper
-      navigation={true}
-      modules={[Navigation]}
-      loop={true}
-      className='mySwiper'
-      style={styles.swiper}
-    >
+    <Swiper navigation={true} modules={[Navigation]} loop={true} className="mySwiper" style={styles.swiper}>
       {images?.map((image, index) => (
         <SwiperSlide key={index}>
-          <img
-            src={image}
-            alt={`Product Image ${index + 1}`}
-            style={styles.swiperSlide}
-          />
+          <img src={image} alt={`Product Image ${index + 1}`} style={styles.swiperSlide} />
         </SwiperSlide>
       ))}
     </Swiper>

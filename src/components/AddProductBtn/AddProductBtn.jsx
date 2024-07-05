@@ -13,7 +13,7 @@ const AddProductBtn = ({ id, products, singleProduct }) => {
   }
 
   return (
-    <Button variant='contained' onClick={handleBuyProduct}>
+    <Button variant="contained" onClick={handleBuyProduct}>
       Buy
     </Button>
   )

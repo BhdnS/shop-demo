@@ -7,29 +7,19 @@ const NavBar = () => {
   const basket = useBasketLength()
 
   return (
-    <AppBar position='static'>
+    <AppBar position="static">
       <Toolbar>
-        <Typography variant='h6' component='div' sx={styles.title}>
+        <Typography variant="h6" component="div" sx={styles.title}>
           Shop
         </Typography>
         <Box sx={styles.box}>
-          <Link underline='none' color='inherit' component={NavLink} to='/'>
+          <Link underline="none" color="inherit" component={NavLink} to="/">
             Home
           </Link>
-          <Link
-            underline='none'
-            color='inherit'
-            component={NavLink}
-            to='categories'
-          >
+          <Link underline="none" color="inherit" component={NavLink} to="categories">
             Categories
           </Link>
-          <Link
-            underline='none'
-            color='inherit'
-            component={NavLink}
-            to='basket'
-          >
+          <Link underline="none" color="inherit" component={NavLink} to="basket">
             Basket: {basket}
           </Link>
         </Box>

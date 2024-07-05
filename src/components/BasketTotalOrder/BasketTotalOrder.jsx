@@ -17,11 +17,11 @@ const BasketTotalOrder = () => {
   return (
     <>
       <Divider sx={styles.divider} />
-      <Typography variant='h5' component='div' sx={styles.title}>
+      <Typography variant="h5" component="div" sx={styles.title}>
         <span>Total Order Value:</span>
         <Box sx={styles.box}>
           <span>{totalValue} $</span>
-          <Button onClick={handleOpenModal} variant='contained' color='primary'>
+          <Button onClick={handleOpenModal} variant="contained" color="primary">
             Buy
           </Button>
         </Box>

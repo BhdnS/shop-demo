@@ -12,12 +12,7 @@ const IncrementProductBtn = ({ id }) => {
   }
 
   return (
-    <Button
-      variant='outlined'
-      size='small'
-      sx={styles.btn}
-      onClick={handleIncrement}
-    >
+    <Button variant="outlined" size="small" sx={styles.btn} onClick={handleIncrement}>
       +
     </Button>
   )

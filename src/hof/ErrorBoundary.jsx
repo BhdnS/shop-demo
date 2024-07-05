@@ -22,11 +22,10 @@ const ErrorBoundary = ({ children }) => {
 
   if (hasError) {
     return (
-      <Container component='main' maxWidth='xs'>
+      <Container component="main" maxWidth="xs">
         <Box sx={styles.box}>
-          <Alert component={'h1'} severity='error' variant='filled'>
-            There was an error in the application. Please return to the home
-            page
+          <Alert component={'h1'} severity="error" variant="filled">
+            There was an error in the application. Please return to the home page
           </Alert>
         </Box>
       </Container>
