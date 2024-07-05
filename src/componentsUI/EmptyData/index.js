@@ -1,3 +1,3 @@
-import EmptyData from './emptyData'
+import EmptyData from './EmptyData.jsx'
 
 export default EmptyData
